@@ -17,35 +17,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello!</title>
   </head>
-  <body class="">
+  <body class="d-flex justify-content-center align-items-center">
     <div class="container py-4">
-      <div class="">
-        <div class="">
+      <div class="row">
+        <div
+          class="card col-sm-6 p-4 d-flex justify-content-center align-items-center"
+        >
           <img
             src="https://thumbs.dreamstime.com/b/no-thumbnail-image-placeholder-forums-blogs-websites-148010362.jpg"
-            class=""
+            class="rounded-circle mb-2"
             style="width: 80px; height: 80px"
             alt="Avatar"
           />
-          <h5 class=""><strong>John Doe</strong></h5>
-          <button type="button" class="">Contact</button>
+          <h5 class="mb-1"><strong>John Doe</strong></h5>
+          <button type="button" class="btn btn-success">Contact</button>
         </div>
-        <div class="">
+        <div class="card col-sm-6 p-4">
           <strong>My Progress</strong>
-          <ul class="">
-            <li class="">
-              <div class="">
+          <ul class="list-group border-0">
+            <li
+              class="list-group-item border-0 d-flex justify-content-between align-items-center"
+            >
+              <div class="d-inline-flex">
                 <img
                   src="https://thumbs.dreamstime.com/b/no-thumbnail-image-placeholder-forums-blogs-websites-148010362.jpg"
                   alt=""
                   style="width: 45px; height: 45px"
-                  class=""
+                  class="me-3 rounded-3"
                 />
                 <div class="">
-                  <p class="">Django</p>
-                  <div class="">
+                  <p class="mb-1 fw-bold">Django</p>
+                  <div class="progress">
                     <div
-                      class=""
+                      class="progress-bar bg-success"
                       role="progressbar"
                       style="width: 80%"
                       aria-valuenow="50"
@@ -55,23 +59,25 @@
                   </div>
                 </div>
               </div>
-              <span class="">&rarr;</span>
+              <span class="badge rounded-pill bg-success">&rarr;</span>
             </li>
           </ul>
-          <ul class="">
-            <li class="">
-              <div class="">
+          <ul class="list-group border-0">
+            <li
+              class="list-group-item border-0 d-flex justify-content-between align-items-center"
+            >
+              <div class="d-inline-flex">
                 <img
                   src="https://thumbs.dreamstime.com/b/no-thumbnail-image-placeholder-forums-blogs-websites-148010362.jpg"
                   alt=""
                   style="width: 45px; height: 45px"
-                  class=""
+                  class="me-3 rounded-3"
                 />
                 <div class="">
-                  <p class="">Flutter</p>
-                  <div class="">
+                  <p class="mb-1 fw-bold">Flutter</p>
+                  <div class="progress">
                     <div
-                      class=""
+                      class="progress-bar bg-info"
                       role="progressbar"
                       style="width: 30%"
                       aria-valuenow="50"
@@ -81,23 +87,25 @@
                   </div>
                 </div>
               </div>
-              <span class="">&rarr;</span>
+              <span class="badge rounded-pill bg-info">&rarr;</span>
             </li>
           </ul>
-          <ul class="">
-            <li class="">
-              <div class="">
+          <ul class="list-group border-0">
+            <li
+              class="list-group-item border-0 d-flex justify-content-between align-items-center"
+            >
+              <div class="d-inline-flex">
                 <img
                   src="https://thumbs.dreamstime.com/b/no-thumbnail-image-placeholder-forums-blogs-websites-148010362.jpg"
                   alt=""
                   style="width: 45px; height: 45px"
-                  class=""
+                  class="me-3 rounded-3"
                 />
                 <div class="">
-                  <p class="">Html</p>
-                  <div class="">
+                  <p class="mb-1 fw-bold">Html</p>
+                  <div class="progress">
                     <div
-                      class=""
+                      class="progress-bar bg-danger"
                       role="progressbar"
                       style="width: 80%"
                       aria-valuenow="50"
@@ -107,23 +115,25 @@
                   </div>
                 </div>
               </div>
-              <span class="">&rarr;</span>
+              <span class="badge rounded-pill bg-danger">&rarr;</span>
             </li>
           </ul>
-          <ul class="">
-            <li class="">
-              <div class="">
+          <ul class="list-group border-0">
+            <li
+              class="list-group-item border-0 d-flex justify-content-between align-items-center"
+            >
+              <div class="d-inline-flex">
                 <img
                   src="https://thumbs.dreamstime.com/b/no-thumbnail-image-placeholder-forums-blogs-websites-148010362.jpg"
                   alt=""
                   style="width: 45px; height: 45px"
-                  class=""
+                  class="me-3 rounded-3"
                 />
                 <div class="">
-                  <p class="">CSS</p>
-                  <div class="">
+                  <p class="mb-1 fw-bold">CSS</p>
+                  <div class="progress">
                     <div
-                      class=""
+                      class="progress-bar bg-primary"
                       role="progressbar"
                       style="width: 80%"
                       aria-valuenow="50"
@@ -133,88 +143,106 @@
                   </div>
                 </div>
               </div>
-              <span class="">&rarr;</span>
+              <span class="badge rounded-pill bg-primary">&rarr;</span>
             </li>
           </ul>
         </div>
-        <div class="">
+        <div class="card col-sm-6 p-4">
           <strong>Reach me</strong>
           <form>
-            <div class="">
-              <label for="exampleInputEmail1" class="">Email address</label>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
               <input
                 type="email"
-                class=""
+                class="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
-              <div id="emailHelp" class="">
+              <div id="emailHelp" class="form-text">
                 We'll never share your email with anyone else.
               </div>
             </div>
-            <div class="">
-              <label for="Subject" class="">Subject</label>
-              <textarea class="" id="Subject" rows="3"></textarea>
+            <div class="mb-3">
+              <label for="Subject" class="form-label">Subject</label>
+              <textarea class="form-control" id="Subject" rows="3"></textarea>
             </div>
-            <div class="">
-              <label for="Country" class="">Country</label>
-              <select class="">
+            <div class="mb-3">
+              <label for="Country" class="form-label">Country</label>
+              <select class="form-control">
                 <option selected>Open this select menu</option>
                 <option value="1">Kuwait</option>
                 <option value="2">Other</option>
               </select>
             </div>
-            <div class="">
-              <input type="checkbox" class="" id="exampleCheck1" />
-              <label class="" for="exampleCheck1"
+            <div class="mb-3">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
                 >This is a business email</label
               >
             </div>
-            <button type="submit" class="">Submit</button>
+            <button type="submit" class="btn btn-success">Submit</button>
           </form>
         </div>
-        <div class="">
+        <div class="card col-sm-6 p-4">
           <strong>My Blog</strong>
-          <div class="" style="height: auto; min-height: 450px">
-            <ol class="">
-              <li class="">
-                <div class="">
-                  <div class="">Article 1</div>
+          <div
+            class="d-flex flex-column justify-content-between w-100 align-items-center"
+            style="height: auto; min-height: 450px"
+          >
+            <ol class="list-group list-group-numbered border-0 w-100">
+              <li class="list-group-item border-0 d-inline-flex">
+                <div class="ms-2">
+                  <div class="fw-bold">Article 1</div>
                   Lorem
                 </div>
-                <span class="">10 mins read</span>
+                <span
+                  class="position-absolute end-0 badge rounded-pill bg-success"
+                  >10 mins read</span
+                >
               </li>
-              <li class="">
-                <div class="">
-                  <div class="">Article 2</div>
+              <li class="list-group-item border-0 d-inline-flex">
+                <div class="ms-2">
+                  <div class="fw-bold">Article 2</div>
                   Lorem
                 </div>
-                <span class="">15 mins read</span>
+                <span
+                  class="position-absolute end-0 badge rounded-pill bg-success"
+                  >15 mins read</span
+                >
               </li>
-              <li class="">
-                <div class="">
-                  <div class="">Article 3</div>
+              <li class="list-group-item border-0 d-inline-flex">
+                <div class="ms-2">
+                  <div class="fw-bold">Article 3</div>
                   Lorem
                 </div>
-                <span class="">7 mins read</span>
+                <span
+                  class="position-absolute end-0 badge rounded-pill bg-success"
+                  >7 mins read</span
+                >
               </li>
             </ol>
-            <ul class="">
-              <li class="">
+            <ul class="pagination">
+              <li class="page-link">
                 <a class="" href="#" tabindex="-1" aria-disabled="true"
                   >Previous</a
                 >
               </li>
-              <li class="">
+              <li class="page-link">
                 <a class="" href="#">1</a>
               </li>
-              <li class="">
+              <li class="page-link">
                 <a class="" href="#">2</a>
               </li>
-              <li class="">
+              <li class="page-link">
                 <a class="" href="#">3</a>
               </li>
-              <li class="">
+              <li class="page-link">
                 <a class="" href="#">Next</a>
               </li>
             </ul>
